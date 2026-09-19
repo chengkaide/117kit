@@ -1,0 +1,22 @@
+# 个人机器专用脚本（含本地路径/身份，不进仓库）
+推送到GitHub.bat
+
+# 根目录调试残留（沙箱里删不掉，统一忽略）
+/.*
+!/.gitignore
+
+# server 下的临时测试脚本
+server/.*
+!server/.gitignore
+
+# 依赖与运行数据（不进仓库）
+node_modules/
+server/node_modules/
+server/data/
+server/uploads/
+server/qtegra-inbox/
+
+# 工作区与日志
+.workbuddy/
+*.log
+_push_log.txt
